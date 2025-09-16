@@ -1,0 +1,516 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRAVIRA</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="travira.csss">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand logo-animate ps-3" href="#">
+      <strong>
+        <span>T</span><span>r</span><span>a</span><span>v</span><span>i</span><span>r</span><span>a</span>
+      </strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3"> 
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/TRAVIRA-25/ASSETS/boat.jpg" class="d-block w-100" alt="Beach">
+      </div>
+      <div class="carousel-item">
+        <img src="/TRAVIRA-25/ASSETS/goa2.jpg" class="d-block w-100" alt="Mountains">
+      </div>
+      <div class="carousel-item">
+        <img src="/TRAVIRA-25/ASSETS/Goa.jpg" class="d-block w-100" alt="City">
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-start hero-text">
+        <h1 class="display-5 fw-bold">Discover Your Next Adventure</h1>
+        <p class="lead">Find the best destinations, tours, and packages tailored just for you.</p>
+      </div>
+
+      <div class="col-lg-6 hero-search">
+        <div class="search-box">
+          <form class="row g-2">
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="Destination">
+            </div>
+            <div class="col-md-4">
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary w-100">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="destinations" class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>Popular Destinations</h2>
+      <a href="#gallery" class="text-decoration-none">View all <i class="bi bi-arrow-right"></i></a>
+    </div>
+
+    <div class="row g-3">
+      
+      <div class="col-md-4">
+        <div class="card dest-card p-3 border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/Goa.jpg" alt="Goa">
+          <div class="card-body p-0 mt-3">
+            <h5 class="mb-1">Goa, India</h5>
+            <p class="text-muted small">Golden beaches, nightlife, water sports, and Portuguese heritage.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-light text-dark">From Rs 9999</span>
+              <a href="#packages" class="btn btn-sm btn-outline-primary">See Packages</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card dest-card p-3 border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/rishi.jpg" alt="Rishikesh">
+          <div class="card-body p-0 mt-3">
+            <h5 class="mb-1">Rishikesh, India</h5>
+            <p class="text-muted small">Yoga capital, rafting on the Ganges, serene Himalayan foothills.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-light text-dark">From Rs 7999</span>
+              <a href="#packages" class="btn btn-sm btn-outline-primary">See Packages</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card dest-card p-3 border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/patrika-gate-jaipur-rajasthani-interior-elements.jpg" alt="Rajasthan">
+          <div class="card-body p-0 mt-3">
+            <h5 class="mb-1">Rajasthan, India</h5>
+            <p class="text-muted small">Forts, palaces, deserts, vibrant culture, and camel rides.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-light text-dark">From Rs 11999</span>
+              <a href="#packages" class="btn btn-sm btn-outline-primary">See Packages</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card dest-card p-3 border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/TAMILNADU.jpg" alt="Tamil Nadu">
+          <div class="card-body p-0 mt-3">
+            <h5 class="mb-1">Tamil Nadu, India</h5>
+            <p class="text-muted small">Temples, beaches, hill stations, and Dravidian culture.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-light text-dark">From Rs 9999</span>
+              <a href="#packages" class="btn btn-sm btn-outline-primary">See Packages</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Why Travel With <span class="badge-accent">Travira</span>?</h2>
+        <p class="text-muted">We curate local experiences, prioritize safety, and offer unbeatable prices with transparent service fees.</p>
+
+        <div class="row g-3 mt-3">
+          <div class="col-6 col-sm-4">
+            <div class="d-flex flex-column align-items-start gap-2">
+              <i class="bi bi-shield-lock fs-2 text-primary"></i>
+              <small class="fw-semibold">Safe Trips</small>
+              <small class="text-muted">Trusted local guides</small>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="d-flex flex-column align-items-start gap-2">
+              <i class="bi bi-wallet2 fs-2 text-success"></i>
+              <small class="fw-semibold">Affordable Packages</small>
+              <small class="text-muted">Best price guarantee</small>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="d-flex flex-column align-items-start gap-2">
+              <i class="bi bi-headset fs-2 text-warning"></i>
+              <small class="fw-semibold">24/7 Support</small>
+              <small class="text-muted">We're here to help</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="/TRAVIRA-25/ASSETS/TRAV.jpeg" class="img-fluid rounded-3 shadow-sm" alt="about us">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="packages" class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>Popular Packages</h2>
+      <div>
+        <a href="#" class="btn btn-outline-secondary btn-sm me-2">All Packages</a>
+        <a href="#contact" class="btn btn-primary btn-sm" style="background:var(--accent); border:none">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      
+      
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/Goa.jpg" class="card-img-top" alt="Goa Beach">
+          <div class="card-body">
+            <h5 class="card-title">Goa Beach Escape — 4 Days</h5>
+            <p class="text-muted small">Relax on golden beaches, nightlife, and water sports. Hotel & breakfast included.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 9,999</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/rishi.jpg" class="card-img-top" alt="Rishikesh">
+          <div class="card-body">
+            <h5 class="card-title">Rishikesh Adventure — 8 Days</h5>
+            <p class="text-muted small">River rafting, yoga, and Ganga aarti experience. Includes camping stay.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong> Rs 8,999</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/patrika-gate-jaipur-rajasthani-interior-elements.jpg" class="card-img-top" alt="Rajasthan">
+          <div class="card-body">
+            <h5 class="card-title">Royal Rajasthan Tour — 10 Days</h5>
+            <p class="text-muted small">Palaces, forts, and desert safari across Jaipur, Jodhpur, and Udaipur.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>₹11,999</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/TAMILNADU.jpg" class="card-img-top" alt="Tamil Nadu">
+          <div class="card-body">
+            <h5 class="card-title">Spiritual Tamil Nadu — 5 Days</h5>
+            <p class="text-muted small">Temple visits in Madurai, Rameshwaram & Kanyakumari. Guided tour.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 9,999</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/india-top-attractions-varanasi.jpg" class="card-img-top" alt="Varanasi">
+          <div class="card-body">
+            <h5 class="card-title">Varanasi Pilgrimage — 3 Days</h5>
+            <p class="text-muted small">Ganga aarti, boat ride, and spiritual walks in the holy city.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 7,499</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/Darjeeling-1-1.jpg" class="card-img-top" alt="Darjeeling">
+          <div class="card-body">
+            <h5 class="card-title">Darjeeling Hills — 8  Days</h5>
+            <p class="text-muted small">Tea gardens, toy train ride, and sunrise at Tiger Hill.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 10,499</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/1200px-Dal_Lake_Hazratbal_Srinagar.jpg" class="card-img-top" alt="Kashmir">
+          <div class="card-body">
+            <h5 class="card-title">Kashmir Paradise — 11 Days</h5>
+            <p class="text-muted small">Srinagar houseboat, Gulmarg skiing, and Pahalgam valley tour.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 20,999</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/Solang-Valley01.jpg" class="card-img-top" alt="Solang Valley">
+          <div class="card-body">
+            <h5 class="card-title">Manali & Solang Valley — 10 Days</h5>
+            <p class="text-muted small">Snow sports, paragliding, and scenic drives through Himachal.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 15,499</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card package-card border-0 shadow-sm">
+          <img src="/TRAVIRA-25/ASSETS/shim.jpg" class="card-img-top" alt="Shimla">
+          <div class="card-body">
+            <h5 class="card-title">Shimla Hill Retreat — 4 Days</h5>
+            <p class="text-muted small">Mall Road walks, Kufri excursion, and toy train ride.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <strong>Rs 5,499</strong>
+              <a href="#" class="btn btn-sm btn-outline-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>What Travelers Say</h2>
+      <small class="text-muted">Real reviews from our community</small>
+    </div>
+
+    <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial p-4">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <img src="/TRAVIRA-25/ASSETS/client.jpg" class="rounded-circle" width="56" height="56" alt="">
+              <div>
+                <strong>Prajwal k </strong>
+                <div class="small text-muted">Rajasthan — June 2025</div>
+              </div>
+            </div>
+            <p class="mb-1">"Amazing trip! Well organized and the local guide was fantastic. Highly recommend Travira."</p>
+            <div class="text-warning">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial p-4">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <img src="/TRAVIRA-25/ASSETS/client.jpg" class="rounded-circle" width="56" height="56" alt="">
+              <div>
+                <strong>Rohit S.</strong>
+                <div class="small text-muted">Tamil Nadu  — April 2025</div>
+              </div>
+            </div>
+            <p class="mb-1">"Great value and excellent communication. The hotel was lovely and close to everything."</p>
+            <div class="text-warning">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h2>Contact & Booking</h2>
+        <p class="text-muted">Fill the form and our travel experts will contact you within 24 hours.</p>
+
+        <form id="contactForm">
+          <div class="row g-2">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Your Name" required id="cname">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email" required id="cemail">
+            </div>
+            <div class="col-md-6">
+              <input type="date" class="form-control" id="cfrom">
+            </div>
+            <div class="col-md-6">
+              <select class="form-select" id="cdest">
+                <option selected>Choose Destination</option>
+                <option>Goa</option>
+                <option>Rishikesh</option>
+                <option>Rajasthan</option>
+                 <option>Tamil Nadu</option>
+                <option>Varanasi</option>
+                <option>Darjeeling</option>
+                 <option>Kashmir</option>
+                <option>Manali & Solang Valley</option>
+                <option>Shimla</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" rows="4" placeholder="Message / Requirements" id="cmsg"></textarea>
+            </div>
+            <div class="col-12 d-grid">
+              <button class="btn btn-primary" style="background:var(--accent); border:none" type="submit">Send Inquiry</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-lg-6">
+        <h5>Our Office</h5>
+        <p class="text-muted">Seven Mentor  — Open Mon-Fri</p>
+        <div class="ratio ratio-16x9 widget-placeholder">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.053304013204!2d73.8426611!3d18.526493200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2d48fcff0d%3A0xb8734e5742b8d17d!2sSevenMentor%20%7C%20Software%20Testing%20Training%20Institute%20in%20Pune!5e0!3m2!1sen!2sin!4v1758007620142!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="extras" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h4>Travel Blog</h4>
+        <div class="widget-placeholder">
+          <article class="mb-3">
+            <h6>Best time to visit Kashmir</h6>
+            <p class="small text-muted">Discover seasonal tips and packing lists for Bali.</p>
+          </article>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Upcoming Events</h4>
+        <div class="widget-placeholder">
+          <ul class="list-unstyled small">
+            <li class="mb-2"><strong>Diwali</strong> — Oct 22, 2025</li>
+            <li class="mb-2"><strong>New Year Party </strong> — Dec 31, 2025</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Special Offers</h4>
+        <div class="widget-placeholder">
+          <p class="mb-2"><span class="badge bg-danger">20% OFF</span> Kashmir Winter Sale — Book by Dec 30</p>
+          <p class="mb-0 small text-muted">Subscribe to our newsletter for exclusive promo codes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-8">
+        <h4>Frequently Asked Questions</h4>
+        <div class="accordion" id="faq">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">What is your cancellation policy?</button></h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body small text-muted">Free cancellation up to 14 days before travel for most packages.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Are flights included?</button></h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body small text-muted">Some packages include flights; others are land-only.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        
+<footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h5 class="mb-2">Travira</h5>
+          <small class="text-muted">© 2025 Travira. All rights reserved.</small>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <small class="text-muted me-2">Follow us:</small>
+          <a class="social-icon" href="#"><i class="bi bi-instagram"></i></a>
+          <a class="social-icon" href="#"><i class="bi bi-facebook"></i></a>
+          <a class="social-icon" href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="travira.js"></script>
+</body>
+</html>
