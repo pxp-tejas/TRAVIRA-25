@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,350 +9,307 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="travira.css">
 </head>
+
 <body class="fade-in">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand logo-animate ps-3" href="index.html">
-      <strong>
-        <span>T</span><span>r</span><span>a</span><span>v</span><span>i</span><span>r</span><span>a</span>
-      </strong>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo-animate ps-3" href="index.html">
+        <strong>
+          <span>T</span><span>r</span><span>a</span><span>v</span><span>i</span><span>r</span><span>a</span>
+        </strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    
-<div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav ms-auto me-3"> 
-    <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
-    <li class="nav-item"><a class="nav-link active" href="packages.html">Packages</a></li>
-    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
-    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
-  </ul>
-</div>
-  </div>
-</nav>
-
-
-<section class="hero position-relative">
-  <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/TRAVIRA-25/ASSETS/boat.jpg" class="d-block w-100" alt="Beach">
-      </div>
-      <div class="carousel-item">
-        <img src="/TRAVIRA-25/ASSETS/goa2.jpg" class="d-block w-100" alt="Mountains">
-      </div>
-      <div class="carousel-item">
-        <img src="/TRAVIRA-25/ASSETS/Goa.jpg" class="d-block w-100" alt="City">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="hero-content container position-absolute top-50 start-50 translate-middle text-center text-white">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="display-4 fw-bold">Our Travel Packages</h1>
-        <p class="lead">Curated experiences for unforgettable journeys across India.</p>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero position-relative">
+    <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/TRAVIRA-25/ASSETS/boat.jpg" class="d-block w-100" alt="Beach">
+        </div>
+        <div class="carousel-item">
+          <img src="/TRAVIRA-25/ASSETS/goa2.jpg" class="d-block w-100" alt="Mountains">
+        </div>
+        <div class="carousel-item">
+          <img src="/TRAVIRA-25/ASSETS/Goa.jpg" class="d-block w-100" alt="City">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    <div class="hero-content container position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="display-4 fw-bold">Our Travel Packages</h1>
+      <p class="lead">Curated experiences for unforgettable journeys across India.</p>
+    </div>
+  </section>
 
+  <!-- Packages Section -->
+  <section id="packages" class="py-5">
+    <div class="container">
+      <div class="row g-4">
 
-<section id="packages" class="py-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <a href="packages.html" class="text-decoration-none">
-          <div class="card package-card border-0 shadow-sm position-relative" data-start-date="2025-06-01" data-end-date="2025-06-04" data-duration="4">
-            <img src="/TRAVIRA-25/ASSETS/Goa.jpg" class="card-img-top" alt="Goa Beach">
-            <div class="card-body">
-              <h5 class="card-title">Goa Beach Escape — 4 Days</h5>
-              <p class="text-muted small">Relax on golden beaches, nightlife, and water sports. Hotel & breakfast included.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <strong>Rs 9,999</strong>
-                <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+        <!-- GOA -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card package-card border-0 shadow-sm position-relative">
+              <img src="/TRAVIRA-25/ASSETS/Goa.jpg" class="card-img-top" alt="Goa Beach">
+              <div class="card-body">
+                <h5 class="card-title">Goa Beach Escape — 4 Days</h5>
+                <p class="text-muted small">Relax on golden beaches, nightlife, and water sports. Hotel & breakfast included.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Rs 9,999</strong>
+                  <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+                </div>
+              </div>
+              <div class="package-overlay">
+                <div class="overlay-content">
+                  <h6>Goa Beach Escape Highlights</h6>
+                  <ul class="small">
+                    <li>Explore Calangute and Baga beaches</li>
+                    <li>Visit historic Fort Aguada</li>
+                    <li>Enjoy water sports activities</li>
+                    <li>Experience vibrant nightlife</li>
+                  </ul>
+                  <p class="small mb-0"><strong>Includes:</strong> Hotel, Breakfast, Airport Transfers</p>
+                </div>
               </div>
             </div>
-            <div class="package-overlay">
-              <div class="overlay-content">
-                <h6>Goa Beach Escape Highlights</h6>
-                <ul class="small">
-                  <li>Explore Calangute and Baga beaches</li>
-                  <li>Visit historic Fort Aguada</li>
-                  <li>Enjoy water sports activities</li>
-                  <li>Experience vibrant nightlife</li>
-                </ul>
-                <p class="small mb-0"><strong>Includes:</strong> Hotel, Breakfast, Airport Transfers</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-md-4">
-        <a href="packages.html" class="text-decoration-none">
-          <div class="card package-card border-0 shadow-sm position-relative" data-start-date="2025-07-01" data-end-date="2025-07-08" data-duration="8">
-            <img src="/TRAVIRA-25/ASSETS/rishi.jpg" class="card-img-top" alt="Rishikesh">
-            <div class="card-body">
-              <h5 class="card-title">Rishikesh Adventure — 8 Days</h5>
-              <p class="text-muted small">River rafting, yoga, and Ganga aarti experience. Includes camping stay.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <strong>Rs 8,999</strong>
-                <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+        <!-- RISHIKESH -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card package-card border-0 shadow-sm position-relative">
+              <img src="/TRAVIRA-25/ASSETS/rishi.jpg" class="card-img-top" alt="Rishikesh">
+              <div class="card-body">
+                <h5 class="card-title">Rishikesh Adventure — 8 Days</h5>
+                <p class="text-muted small">River rafting, yoga, and Ganga aarti experience. Includes camping stay.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Rs 8,999</strong>
+                  <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+                </div>
               </div>
             </div>
-            <div class="package-overlay">
-              <div class="overlay-content">
-                <h6>Rishikesh Adventure Highlights</h6>
-                <ul class="small">
-                  <li>White water rafting on the Ganges</li>
-                  <li>Daily yoga and meditation sessions</li>
-                  <li>Attend the mesmerizing Ganga Aarti</li>
-                  <li>Trek to nearby waterfalls</li>
-                </ul>
-                <p class="small mb-0"><strong>Includes:</strong> Camping, Meals, Activities</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-md-4">
-        <a href="packages.html" class="text-decoration-none">
-          <div class="card package-card border-0 shadow-sm position-relative" data-start-date="2025-08-01" data-end-date="2025-08-10" data-duration="10">
-            <img src="/TRAVIRA-25/ASSETS/patrika-gate-jaipur-rajasthani-interior-elements.jpg" class="card-img-top" alt="Rajasthan">
-            <div class="card-body">
-              <h5 class="card-title">Royal Rajasthan Tour — 10 Days</h5>
-              <p class="text-muted small">Palaces, forts, and desert safari across Jaipur, Jodhpur, and Udaipur.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <strong>Rs 11,999</strong>
-                <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+        <!-- RAJASTHAN -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card package-card border-0 shadow-sm position-relative">
+              <img src="/TRAVIRA-25/ASSETS/patrika-gate-jaipur-rajasthani-interior-elements.jpg" class="card-img-top" alt="Rajasthan">
+              <div class="card-body">
+                <h5 class="card-title">Royal Rajasthan Tour — 10 Days</h5>
+                <p class="text-muted small">Palaces, forts, and desert safari across Jaipur, Jodhpur, and Udaipur.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Rs 11,999</strong>
+                  <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+                </div>
               </div>
             </div>
-            <div class="package-overlay">
-              <div class="overlay-content">
-                <h6>Royal Rajasthan Tour Highlights</h6>
-                <ul class="small">
-                  <li>Visit the iconic Amber Fort in Jaipur</li>
-                  <li>Explore the blue city of Jodhpur</li>
-                  <li>Boat ride on Lake Pichola in Udaipur</li>
-                  <li>Camel safari in the Thar Desert</li>
-                </ul>
-                <p class="small mb-0"><strong>Includes:</strong> Hotels, Some Meals, Guided Tours</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-md-4">
-        <a href="packages.html" class="text-decoration-none">
-          <div class="card package-card border-0 shadow-sm position-relative" data-start-date="2025-09-01" data-end-date="2025-09-05" data-duration="5">
-            <img src="/TRAVIRA-25/ASSETS/tn.jpg" class="card-img-top" alt="Tamil Nadu">
-            <div class="card-body">
-              <h5 class="card-title">Spiritual Tamil Nadu — 5 Days</h5>
-              <p class="text-muted small">Temple visits in Madurai, Rameshwaram & Kanyakumari. Guided tour.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <strong>Rs 9,999</strong>
-                <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+        <!-- TAMIL NADU -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card package-card border-0 shadow-sm position-relative">
+              <img src="/TRAVIRA-25/ASSETS/tn.jpg" class="card-img-top" alt="Tamil Nadu">
+              <div class="card-body">
+                <h5 class="card-title">Spiritual Tamil Nadu — 5 Days</h5>
+                <p class="text-muted small">Temple visits in Madurai, Rameshwaram & Kanyakumari. Guided tour.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Rs 9,999</strong>
+                  <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+                </div>
               </div>
             </div>
-            <div class="package-overlay">
-              <div class="overlay-content">
-                <h6>Spiritual Tamil Nadu Highlights</h6>
-                <ul class="small">
-                  <li>Explore the Meenakshi Temple in Madurai</li>
-                  <li>Visit the Ramanathaswamy Temple in Rameshwaram</li>
-                  <li>Witness sunset at Kanyakumari</li>
-                  <li>Experience traditional Tamil cuisine</li>
-                </ul>
-                <p class="small mb-0"><strong>Includes:</strong> Hotels, Breakfast, Temple Tours</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-md-4">
-        <a href="packages.html" class="text-decoration-none">
-          <div class="card package-card border-0 shadow-sm position-relative" data-start-date="2025-10-01" data-end-date="2025-10-03" data-duration="3">
-            <img src="/TRAVIRA-25/ASSETS/india-top-attractions-varanasi.jpg" class="card-img-top" alt="Varanasi">
-            <div class="card-body">
-              <h5 class="card-title">Varanasi Pilgrimage — 3 Days</h5>
-              <p class="text-muted small">Ganga aarti, boat ride, and spiritual walks in the holy city.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <strong>Rs 7,499</strong>
-                <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+        <!-- VARANASI -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card package-card border-0 shadow-sm position-relative">
+              <img src="/TRAVIRA-25/ASSETS/india-top-attractions-varanasi.jpg" class="card-img-top" alt="Varanasi">
+              <div class="card-body">
+                <h5 class="card-title">Varanasi Pilgrimage — 3 Days</h5>
+                <p class="text-muted small">Ganga aarti, boat ride, and spiritual walks in the holy city.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Rs 7,499</strong>
+                  <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+                </div>
               </div>
             </div>
-            <div class="package-overlay">
-              <div class="overlay-content">
-                <h6>Varanasi Pilgrimage Highlights</h6>
-                <ul class="small">
-                  <li>Attend the evening Ganga Aarti ceremony</li>
-                  <li>Early morning boat ride on the Ganges</li>
-                  <li>Visit ancient temples and ghats</li>
-                  <li>Experience the spiritual ambiance of the city</li>
-                </ul>
-                <p class="small mb-0"><strong>Includes:</strong> Hotel, Breakfast, Guided Tours</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-md-4">
-        <a href="packages.html" class="text-decoration-none">
-          <div class="card package-card border-0 shadow-sm position-relative" data-start-date="2025-11-01" data-end-date="2025-11-08" data-duration="8">
-            <img src="/TRAVIRA-25/ASSETS/Darjeeling-1-1.jpg" class="card-img-top" alt="Darjeeling">
-            <div class="card-body">
-              <h5 class="card-title">Darjeeling Hills — 8 Days</h5>
-              <p class="text-muted small">Tea gardens, toy train ride, and sunrise at Tiger Hill.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <strong>Rs 10,499</strong>
-                <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+        <!-- DARJEELING -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card package-card border-0 shadow-sm position-relative">
+              <img src="/TRAVIRA-25/ASSETS/Darjeeling-1-1.jpg" class="card-img-top" alt="Darjeeling">
+              <div class="card-body">
+                <h5 class="card-title">Darjeeling Hills — 8 Days</h5>
+                <p class="text-muted small">Tea gardens, toy train ride, and sunrise at Tiger Hill.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>Rs 10,499</strong>
+                  <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
+                </div>
               </div>
             </div>
-            <div class="package-overlay">
-              <div class="overlay-content">
-                <h6>Darjeeling Hills Highlights</h6>
-                <ul class="small">
-                  <li>Ride the famous Darjeeling Himalayan Railway</li>
-                  <li>Watch sunrise over Kanchenjunga from Tiger Hill</li>
-                  <li>Visit tea plantations and taste local teas</li>
-                  <li>Explore the Himalayan Mountaineering Institute</li>
-                </ul>
-                <p class="small mb-0"><strong>Includes:</strong> Hotels, Breakfast, Sightseeing</p>
-              </div>
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="py-5 bg-white">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <h2>Contact & Booking</h2>
-        <p class="text-muted">Fill the form and our travel experts will contact you within 24 hours.</p>
+  <!-- Contact & Booking -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4">
 
-        <form id="contactForm" action="https://formsubmit.co/tj015748@gmail.com" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="">
+        <div class="col-lg-6">
+          <h2>Contact & Booking</h2>
+          <p class="text-muted">Fill the form and our travel experts will contact you within 24 hours.</p>
 
-          <div class="row g-2">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name" required id="cname" name="name">
+          <form id="contactForm" action="https://formsubmit.co/tj015748@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thankyou.html">
+
+            <div class="row g-2">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name" required name="name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required name="email">
+              </div>
+              <div class="col-md-6">
+                <input type="date" class="form-control" name="date">
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" name="destination">
+                  <option selected>Choose Destination</option>
+                  <option>Goa</option>
+                  <option>Rishikesh</option>
+                  <option>Rajasthan</option>
+                  <option>Tamil Nadu</option>
+                  <option>Varanasi</option>
+                  <option>Darjeeling</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Message / Requirements" name="message"></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary" style="background:var(--accent); border:none" type="submit">Send Inquiry</button>
+              </div>
+              <div class="col-12 mt-3 text-center">
+                <div id="contactMessage" class="text-success"></div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Email" required id="cemail" name="email">
-            </div>
-            <div class="col-md-6">
-              <input type="date" class="form-control" id="cfrom" name="date">
-            </div>
-            <div class="col-md-6">
-              <select class="form-select" id="cdest" name="destination">
-                <option selected>Choose Destination</option>
-                <option>Goa</option>
-                <option>Rishikesh</option>
-                <option>Rajasthan</option>
-                <option>Tamil Nadu</option>
-                <option>Varanasi</option>
-                <option>Darjeeling</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <textarea class="form-control" rows="4" placeholder="Message / Requirements" id="cmsg" name="message"></textarea>
-            </div>
-            <div class="col-12 d-grid">
-              <button class="btn btn-primary" style="background:var(--accent); border:none" type="submit">Send Inquiry</button>
-            </div>
-            <div class="col-12 mt-3 text-center">
-              <div id="contactMessage" class="text-success"></div>
-            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <h5>Our Office</h5>
+          <p class="text-muted">Nagpur — Open Mon-Fri</p>
+          <div class="ratio ratio-16x9 widget-placeholder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
           </div>
-        </form>
+        </div>
+
       </div>
 
-      <div class="col-lg-6">
-        <h5>Our Office</h5>
-        <p class="text-muted">Nagpur — Open Mon-Fri</p>
-        <div class="ratio ratio-16x9 widget-placeholder">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238130.1549557654!2d78.90734643379724!3d21.16100570907255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1760512565762!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="row mt-4">
+        <div class="col-lg-8">
+          <h4>Frequently Asked Questions</h4>
+          <div class="accordion" id="faq">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">What is your cancellation policy?</button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body small text-muted">Free cancellation up to 14 days before travel for most packages.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Are flights included?</button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body small text-muted">Some packages include flights; others are land-only.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-2 bg-dark text-light">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <small>© 2025 Travira. All rights reserved.</small>
+      <div>
+        <a class="text-light me-2" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="text-light me-2" href="#"><i class="bi bi-facebook"></i></a>
+        <a class="text-light" href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Travira</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" style="background:var(--accent); border:none">Login</button>
+          </form>
+          <div class="text-center mt-3">
+            <small>Don't have an account? <a href="#">Sign Up</a></small>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="travira.js"></script>
 
-  <div class="row mt-4">
-      <div class="col-lg-8">
-        <h4>Frequently Asked Questions</h4>
-        <div class="accordion" id="faq">
-          <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">What is your cancellation policy?</button></h2>
-            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body small text-muted">Free cancellation up to 14 days before travel for most packages.</div></div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Are flights included?</button></h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body small text-muted">Some packages include flights; others are land-only.</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-
-</section>
-<footer class="footer py-2 bg-dark text-light">
-  <div class="container-fluid d-flex justify-content-between align-items-center">
-    <small>© 2025 Travira. All rights reserved.</small>
-    <div>
-      <a class="text-light me-2" href="#"><i class="bi bi-instagram"></i></a>
-      <a class="text-light me-2" href="#"><i class="bi bi-facebook"></i></a>
-      <a class="text-light" href="#"><i class="bi bi-twitter"></i></a>
-    </div>
-  </div>
-</footer>
-
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Login to Travira</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="loginEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="loginEmail">
-          </div>
-          <div class="mb-3">
-            <label for="loginPassword" class="form-label">Password</label>
-            <input type="password" class="form-control" id="loginPassword">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="rememberMe">
-            <label class="form-check-label" for="rememberMe">Remember me</label>
-          </div>
-          <button type="submit" class="btn btn-primary w-100" style="background:var(--accent); border:none">Login</button>
-        </form>
-        <div class="text-center mt-3">
-          <small>Don't have an account? <a href="#">Sign Up</a></small>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="travira.js"></script>
 </body>
-
 </html>
