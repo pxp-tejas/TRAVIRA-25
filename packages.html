@@ -149,7 +149,7 @@
               <img src="/TRAVIRA-25/ASSETS/india-top-attractions-varanasi.jpg" class="card-img-top" alt="Varanasi">
               <div class="card-body">
                 <h5 class="card-title">Varanasi Pilgrimage — 3 Days</h5>
-                <p class="text-muted small">Ganga aarti, boat ride, and spiritual walks in the holy city.</p>
+                <p class="text-muted small">Ganga aarti, boat ride, and spiritual walks in the holy city.<br> A Must Visit.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <strong>Rs 7,499</strong>
                   <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
@@ -166,7 +166,7 @@
               <img src="/TRAVIRA-25/ASSETS/Darjeeling-1-1.jpg" class="card-img-top" alt="Darjeeling">
               <div class="card-body">
                 <h5 class="card-title">Darjeeling Hills — 8 Days</h5>
-                <p class="text-muted small">Tea gardens, toy train ride, and sunrise at Tiger Hill.</p>
+                <p class="text-muted small">Tea gardens, toy train ride, and sunrise at Tiger Hill.<br> A Must Visit.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <strong>Rs 10,499</strong>
                   <a href="#" class="btn btn-sm btn-outline-primary">View Package</a>
@@ -180,64 +180,100 @@
     </div>
   </section>
 
-  <!-- Contact & Booking -->
-  <section id="contact" class="py-5 bg-white">
-    <div class="container">
-      <div class="row g-4">
+ <section id="contact" class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h2>Contact & Booking</h2>
+        <p class="text-muted">Fill the form and our travel experts will contact you within 24 hours.</p>
 
-        <div class="col-lg-6">
-          <h2>Contact & Booking</h2>
-          <p class="text-muted">Fill the form and our travel experts will contact you within 24 hours.</p>
+        <form id="contactForm" action="https://formsubmit.co/tj015748@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="">
 
-          <form id="contactForm" action="https://formsubmit.co/tj015748@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thankyou.html">
+  <div class="row g-2">
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Your Name" required id="cname" name="name">
+    </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" placeholder="Email" required id="cemail" name="email">
+    </div>
+    <div class="col-md-6">
+      <input type="date" class="form-control" id="cfrom" name="date">
+    </div>
+    <div class="col-md-6">
+      <select class="form-select" id="cdest" name="destination">
+        <option selected>Choose Destination</option>
+        <option>Goa</option>
+        <option>Rishikesh</option>
+        <option>Rajasthan</option>
+        <option>Tamil Nadu</option>
+        <option>Varanasi</option>
+        <option>Darjeeling</option>
+        <option>Kashmir</option>
+        <option>Manali & Solang Valley</option>
+        <option>Shimla</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <textarea class="form-control" rows="4" placeholder="Message / Requirements" id="cmsg" name="message"></textarea>
+    </div>
+    <div class="col-12 d-grid">
+      <button class="btn btn-primary" style="background:var(--accent); border:none" type="submit">Send Inquiry</button>
+    </div>
+    <div class="col-12 mt-3 text-center">
+      <div id="contactMessage" class="text-success"></div>
+    </div>
+  </div>
+</form>
+    
 
-            <div class="row g-2">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Your Name" required name="name">
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Email" required name="email">
-              </div>
-              <div class="col-md-6">
-                <input type="date" class="form-control" name="date">
-              </div>
-              <div class="col-md-6">
-                <select class="form-select" name="destination">
-                  <option selected>Choose Destination</option>
-                  <option>Goa</option>
-                  <option>Rishikesh</option>
-                  <option>Rajasthan</option>
-                  <option>Tamil Nadu</option>
-                  <option>Varanasi</option>
-                  <option>Darjeeling</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" rows="4" placeholder="Message / Requirements" name="message"></textarea>
-              </div>
-              <div class="col-12 d-grid">
-                <button class="btn btn-primary" style="background:var(--accent); border:none" type="submit">Send Inquiry</button>
-              </div>
-              <div class="col-12 mt-3 text-center">
-                <div id="contactMessage" class="text-success"></div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-lg-6">
-          <h5>Our Office</h5>
-          <p class="text-muted">Nagpur — Open Mon-Fri</p>
-          <div class="ratio ratio-16x9 widget-placeholder">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
-          </div>
-        </div>
 
       </div>
 
-      <div class="row mt-4">
+      <div class="col-lg-6">
+        <h5>Our Office</h5>
+        <p class="text-muted">Nagpur — Open Mon-Fri</p>
+        <div class="ratio ratio-16x9 widget-placeholder">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238130.1549557654!2d78.90734643379724!3d21.16100570907255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1760512565762!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="extras" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h4>Travel Blog</h4>
+        <div class="widget-placeholder">
+          <article class="mb-3">
+            <h6>Best time to visit Kashmir</h6>
+            <p class="small text-muted">Discover seasonal tips and packing lists for Bali.</p>
+          </article>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Upcoming Events</h4>
+        <div class="widget-placeholder">
+          <ul class="list-unstyled small">
+            <li class="mb-2"><strong>Diwali</strong> — Oct 22, 2025</li>
+            <li class="mb-2"><strong>New Year Party </strong> — Dec 31, 2025</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Special Offers</h4>
+        <div class="widget-placeholder">
+          <p class="mb-2"><span class="badge bg-danger">20% OFF</span> Kashmir Winter Sale — Book by Dec 30</p>
+          <p class="mb-0 small text-muted">Subscribe to our newsletter for exclusive promo codes.</p>
+        </div>
+      </div>
+    </div>
+
+   <div class="row mt-4">
         <div class="col-lg-8">
           <h4>Frequently Asked Questions</h4>
           <div class="accordion" id="faq">
