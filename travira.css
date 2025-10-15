@@ -1,0 +1,514 @@
+:root {
+  --primary: #B9E6F2;
+  --secondary: #F9B6C0;
+  --neutral: #F7F8FA;
+  --accent: #FFD6A5;
+  --highlight: #D6C5F0;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  background: linear-gradient(120deg, var(--primary), var(--highlight), var(--accent));
+  background-size: 300% 300%;
+  animation: lightShift 18s ease infinite;
+  color: #000;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Soft gradient animation */
+@keyframes lightShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Optional section background */
+.section {
+  background: var(--neutral);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand strong {
+  color: var(--accent);
+}
+
+.navbar.fixed-top {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1140px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar .container {
+  justify-content: center;
+}
+
+.logo-animate span {
+  display: inline-block;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: drop 0.6s forwards;
+}
+
+.logo-animate span:nth-child(1) { animation-delay: 0s; }
+.logo-animate span:nth-child(2) { animation-delay: 0.1s; }
+.logo-animate span:nth-child(3) { animation-delay: 0.2s; }
+.logo-animate span:nth-child(4) { animation-delay: 0.3s; }
+.logo-animate span:nth-child(5) { animation-delay: 0.4s; }
+.logo-animate span:nth-child(6) { animation-delay: 0.5s; }
+.logo-animate span:nth-child(7) { animation-delay: 0.6s; }
+
+@keyframes drop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-animate span:nth-child(4),
+.logo-animate span:nth-child(5),
+.logo-animate span:nth-child(6),
+.logo-animate span:nth-child(7) {
+  color: var(--accent);
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-carousel, .hero-carousel .carousel-inner, .hero-carousel .carousel-item {
+  height: 100%;
+}
+
+.hero-carousel img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.7) 0%, rgba(76, 161, 175, 0.7) 100%);
+  z-index: 1;
+}
+
+.hero-text h1 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-content form {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.hero-content .form-control {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-content .btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+
+.hero-content .btn-primary:hover {
+  background-color: darken(var(--accent), 10%);
+}
+
+/* Card Styles */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+/* Destination and Package specific styles */
+.dest-card .card-body, .package-card .card-body {
+  padding: 16px;
+}
+
+.dest-card .badge {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.package-card {
+  overflow: hidden;
+}
+
+.package-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.package-card:hover .package-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+.overlay-content h6 {
+  margin-bottom: 0.5rem;
+}
+
+.overlay-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-content li {
+  margin-bottom: 0.25rem;
+}
+
+.package-card strong {
+  font-size: 15px;
+  color: #000;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #006989; /* Deep teal for strong contrast */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00546b; /* Slightly darker teal */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 105, 137, 0.3);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #FE7F2D; /* Warm orange accent */
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #e86e24;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(254, 127, 45, 0.3);
+}
+
+/* Optional outline button for minimalist design */
+.btn-outline {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #006989;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #B9E6F2;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+
+/* Grid Styles */
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.col-md-4 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Contact Form */
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: #aaa;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  left: 5px;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+#loginMessage div {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Universal Footer Styles */
+.footer {
+  width: 100%;
+  height: 80px; /* Fixed height */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%) !important;
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  box-sizing: border-box;
+}
+
+/* Make footer stick at bottom if page content is short */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1; /* Fills remaining space, pushes footer down */
+}
+
+/* Modal Styles */
+.modal-image-container {
+  width: 100%;
+  height: 300px; /* Adjust this value as needed */
+  overflow: hidden;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-dialog {
+  max-width: 800px; /* Adjust this value to your preference */
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-text-content {
+  padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .masonry {
+    column-count: 1;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero .display-5 {
+    font-size: 28px;
+  }
+
+  .hero-content form {
+    padding: 15px;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+}
+
+/* ... existing css */
+
+/* --- Modal Customization --- */
+.modal-content {
+  border-radius: 15px; /* Softer corners */
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* A bit more pronounced shadow */
+}
+
+.modal-header {
+  background-color: #212529; /* Matches your navbar's dark background */
+  color: white;
+  border-bottom: none; /* Cleaner look */
+  border-top-left-radius: 14px; /* Match parent's border-radius */
+  border-top-right-radius: 14px;
+}
+
+.modal-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%); /* Make the 'X' button white */
+}
+
+.modal-body .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5); /* Using your accent color for focus */
+}
+
+.modal-body .form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
