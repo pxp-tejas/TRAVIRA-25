@@ -1,4 +1,3 @@
-// Destination data
 const destinations = [
   {
     id: 1,
@@ -44,7 +43,6 @@ const destinations = [
   }
 ];
 
-// Package data
 const packages = [
   {
     id: 1,
@@ -100,9 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Fade-in effect for the body on page load
   document.body.classList.add('visible');
 
-  /**
-   * Handles "Book Now" button clicks inside destination modals.
-   */
   const bookNowButtons = document.querySelectorAll('.book-now-btn');
   bookNowButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -121,31 +116,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
       
-      // Show a success alert message to the user
+      
       alert(`Successfully booked your trip to ${destination}! We will contact you shortly with the details.`);
     });
   });
 
-  /**
-   * Handles the login form submission with a success message.
-   */
   const loginForm = document.getElementById('loginForm');
   const loginMessage = document.getElementById('loginMessage');
 
-  // Ensure the login form exists on the current page before adding a listener
   if (loginForm) {
     loginForm.addEventListener('submit', function (event) {
       // Prevent the form from submitting to the 'action' URL
       event.preventDefault(); 
 
-      // Simulate a network delay for a better user experience
       setTimeout(() => {
         // Display a success message inside the modal
         if (loginMessage) {
           loginMessage.textContent = 'Login successful! Welcome back.';
         }
 
-        // After showing the message, wait 2 seconds before hiding the modal
         setTimeout(() => {
           const loginModalElement = document.getElementById('loginModal');
           if (loginModalElement) {
@@ -154,8 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
               modalInstance.hide();
             }
           }
-          
-          // Reset the form and message for the next time the modal is opened
           loginForm.reset();
           if (loginMessage) {
             loginMessage.textContent = '';
@@ -165,4 +152,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 500);
     });
   }
+
 });
