@@ -95,28 +95,20 @@ const packages = [
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Fade-in effect for the body on page load
   document.body.classList.add('visible');
 
   const bookNowButtons = document.querySelectorAll('.book-now-btn');
   bookNowButtons.forEach(button => {
     button.addEventListener('click', function () {
-      // Get the destination name from the data attribute
       const destination = this.getAttribute('data-destination');
-      
-      // Find the closest modal parent element
       const modalElement = this.closest('.modal');
       
       if (modalElement) {
-        // Get the Bootstrap modal instance associated with the element
         const modalInstance = bootstrap.Modal.getInstance(modalElement);
         if (modalInstance) {
-          // Hide the modal
           modalInstance.hide();
         }
       }
-      
-      
       alert(`Successfully booked your trip to ${destination}! We will contact you shortly with the details.`);
     });
   });
@@ -126,11 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (loginForm) {
     loginForm.addEventListener('submit', function (event) {
-      // Prevent the form from submitting to the 'action' URL
       event.preventDefault(); 
 
       setTimeout(() => {
-        // Display a success message inside the modal
         if (loginMessage) {
           loginMessage.textContent = 'Login successful! Welcome back.';
         }
@@ -154,3 +144,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
